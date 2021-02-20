@@ -43,11 +43,13 @@ header {
   color: white;
   font-size: 20px;
 }
+
 .header__icons {
   display: flex;
   list-style: none;
   color: white;
 }
+
 .header__icons i {
   padding: 8px;
 }
@@ -87,15 +89,22 @@ header {
 .info .metadata .titleAndBtn .title {
   font-size: 20px;
   width: 100%;
+  margin-right: 8px;
+}
+
+.info .metadata .titleAndBtn .title.clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  margin-right: 8px;
 }
 
-.info .metadata .titleAndBtn .morebtn {
+.info .metadata .titleAndBtn .moreBtn {
   height: 100%;
+}
+
+.info .metadata .titleAndBtn .moreBtn.clicked {
+  transform: rotate(180deg);
 }
 
 .info .views {
@@ -209,7 +218,7 @@ header {
   margin-top: 4px;
 }
 
-.upNext .item .morebtn {
+.upNext .item .moreBtn {
   flex: 1 1 5%;
   height: 100%;
 }
